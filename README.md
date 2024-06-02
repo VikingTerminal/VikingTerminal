@@ -1,6 +1,6 @@
 ## Hi!! Welcome everyone👋
 
-<img src="https://komarev.com/ghpvc/?username=VikingTerminal&color=red" alt="Profile views" height="40" width="300">
+<img src="https://komarev.com/ghpvc/?username=VikingTerminal&color=red" alt="Profile views" height="30" width="300">
 
 🍷 Welcome to my profile. With tools, I can perform security tests and other fun utilities.
 
