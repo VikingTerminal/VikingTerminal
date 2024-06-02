@@ -25,3 +25,5 @@ Here are some ideas to get you started:
 - 🤞 I’m looking for help with advanced algorithms
 - 🗣️ Ask me about web development
 - 👤 How to reach me: [vikingterminal@proton.me]
+
+![Security](https://www.gifcen.com/wp-content/uploads/2023/09/hacker-gif-5.gif)
