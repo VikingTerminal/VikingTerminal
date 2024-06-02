@@ -2,7 +2,7 @@ import requests
 from colorama import Fore, Style
 import subprocess
 
-# Stampa il banner
+# Print the banner
 print(Fore.GREEN + """
        /|   | |
      _/_\_  >_<
@@ -15,22 +15,22 @@ print(Fore.GREEN + """
 `----'`=-='   '    t.me/VikingTERMINAL
 """ + Style.RESET_ALL)
 
-# URL per la richiesta API
+# URL for the API request
 url = "https://api.github.com/repos/VikingTerminal/VikingTerminal/contents"
 
-# Richiesta all'API GitHub
+# GitHub API request
 try:
     response = requests.get(url)
     response.raise_for_status()
     files = [file['name'] for file in response.json()]
 except requests.exceptions.RequestException as e:
-    print(Fore.RED + "Errore nella richiesta HTTP: " + str(e) + Style.RESET_ALL)
+    print(Fore.RED + "HTTP request error: " + str(e) + Style.RESET_ALL)
     files = []
 except ValueError as e:
-    print(Fore.RED + "Errore nel parsing della risposta JSON: " + str(e) + Style.RESET_ALL)
+    print(Fore.RED + "JSON response parsing error: " + str(e) + Style.RESET_ALL)
     files = []
 
-# Mappatura degli strumenti ai file
+# Tool-to-file mapping
 tool_mapping = {
     "AirCrack_NG.py": "AirCrack NG",
     "CDN_detector.py": "CDN Detector",
@@ -69,26 +69,26 @@ tool_mapping = {
     "scandrir.py": "Scandrir"
 }
 
-# Stampa l'elenco dei file
+# Print the list of files
 for i, file in enumerate(files, start=1):
     print(f"{Fore.CYAN}{i}. {file}{Style.RESET_ALL}")
 
-# Richiede la selezione dell'utente
+# Prompt the user for selection
 try:
-    selection = int(input("Scegli il numero del file da eseguire: "))
+    selection = int(input("Choose the number of the file to execute: "))
     if 1 <= selection <= len(files):
         selected_file = files[selection - 1]
         
-        # Stampa il nome del file selezionato
+        # Print the name of the selected file
         if selected_file in tool_mapping:
             tool_name = tool_mapping[selected_file]
-            print(f"Hai selezionato '{selected_file}'. Ora eseguiamo '{tool_name}'.")
+            print(f"You selected '{selected_file}'. Now executing '{tool_name}'.")
         else:
-            print(Fore.YELLOW + f"Hai selezionato '{selected_file}'. Nessuno strumento associato trovato. Verrà comunque eseguito." + Style.RESET_ALL)
+            print(Fore.YELLOW + f"You selected '{selected_file}'. No associated tool found. It will still be executed." + Style.RESET_ALL)
         
-        # Esegue il file selezionato
+        # Execute the selected file
         subprocess.run(["python", selected_file])
     else:
-        print(Fore.RED + "Selezione non valida. Per favore, seleziona un numero valido." + Style.RESET_ALL)
+        print(Fore.RED + "Invalid selection. Please select a valid number." + Style.RESET_ALL)
 except ValueError:
-    print(Fore.RED + "Input non valido. Inserisci un numero." + Style.RESET_ALL)
+    print(Fore.RED + "Invalid input. Please enter a number." + Style.RESET_ALL)
