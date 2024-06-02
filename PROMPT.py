@@ -79,14 +79,15 @@ try:
     if 1 <= selection <= len(files):
         selected_file = files[selection - 1]
         
+        # Stampa il nome del file selezionato
         if selected_file in tool_mapping:
             tool_name = tool_mapping[selected_file]
             print(f"Hai selezionato '{selected_file}'. Ora eseguiamo '{tool_name}'.")
-            
-            # Esegue il file selezionato
-            subprocess.run(["python", selected_file])
         else:
-            print(Fore.RED + "Non c'è alcuno strumento associato a questo file." + Style.RESET_ALL)
+            print(Fore.YELLOW + f"Hai selezionato '{selected_file}'. Nessuno strumento associato trovato. Verrà comunque eseguito." + Style.RESET_ALL)
+        
+        # Esegue il file selezionato
+        subprocess.run(["python", selected_file])
     else:
         print(Fore.RED + "Selezione non valida. Per favore, seleziona un numero valido." + Style.RESET_ALL)
 except ValueError:
