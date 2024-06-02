@@ -1,5 +1,7 @@
 ## Hi!! Welcome everyone👋
 
+![Profile views](https://komarev.com/ghpvc/?username=VikingTerminal&color=blue)
+
 🍷 Welcome to my profile. With tools, I can perform security tests and other fun utilities.
 
 ![Security](https://www.gifcen.com/wp-content/uploads/2023/06/hacker-gif-8.gif)
