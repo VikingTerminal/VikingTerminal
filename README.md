@@ -14,3 +14,12 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 --> 
+
+- 🔭 I’m currently working on awesome projects
+- 🌱 I’m currently learning new technologies
+- 👯 I’m looking to collaborate on open source projects
+- 🤔 I’m looking for help with advanced algorithms
+- 💬 Ask me about web development
+- 📫 How to reach me: [your email or contact info]
+- 😄 Pronouns: he/him
+- ⚡ Fun fact: I love hiking and photography
