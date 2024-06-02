@@ -2,7 +2,7 @@
 
 🍷 Benvenuti nel mio profilo. Attraverso i miei strumenti potrei eseguire test di sicurezza e altre utilità divertenti.
 
-![Sicurezza](https://miro.medium.com/v2/resize:fit:1024/0*kT6U_WOuiTJmLTyr.gif)
+![Sicurezza](https://www.gifcen.com/wp-content/uploads/2023/06/hacker-gif-8.gif)
 
 Mi auguro che tu abbia l'autorizzazione per utilizzarli oppure stai testando la tua piattaforma.
 
