@@ -3,10 +3,10 @@ from bs4 import BeautifulSoup
 from colorama import init, Fore
 import time
 
-# Inizializza colorama
+# Initialize colorama
 init(autoreset=True)
 
-# Stampa l'immagine solo una volta all'inizio del programma
+# Print the image only once at the beginning of the program
 print(Fore.MAGENTA + """
  
 | | |<_>| |<_>._ _  _ 
@@ -17,12 +17,12 @@ print(Fore.MAGENTA + """
 """)
 
 while True:
-    # Chiedi all'utente di inserire il dominio o "exit" per uscire
-    print(Fore.GREEN + "Inserisci il dominio (senza http/https) o scrivi 'exit' per uscire: ", end="")
+    # Ask the user to input the domain or "exit" to quit
+    print(Fore.GREEN + "Enter the domain (without http/https) or type 'exit' to quit: ", end="")
     domain = input().strip()
 
     if domain.lower() == 'exit':
-        print(Fore.LIGHTYELLOW_EX + "Grazie per aver provato il tool.t.me/Rapid85")
+        print(Fore.LIGHTYELLOW_EX + "Thank you for trying the tool.t.me/Rapid85")
         break
 
     url = f"http://{domain}"
@@ -30,20 +30,20 @@ while True:
     try:
         response = requests.get(url)
 
-        # Verifica se la richiesta ha avuto successo
+        # Check if the request was successful
         response.raise_for_status()
 
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        # Esempio: Trova tutti i link nella pagina
+        # Example: Find all links on the page
         links = soup.find_all('a')
 
-        # Chiedi all'utente il nome del file di output
-        print(Fore.GREEN + "Desideri salvare i risultati in un file? (yes/no): ", end="")
+        # Ask the user if they want to save the results to a file
+        print(Fore.GREEN + "Do you want to save the results to a file? (yes/no): ", end="")
         save_results = input().strip().lower()
 
         if save_results == 'yes':
-            print(Fore.GREEN + "Inserisci il nome del file di output (senza estensione): ", end="")
+            print(Fore.GREEN + "Enter the output file name (without extension): ", end="")
             output_file_name = input().strip() + '.txt'
 
             with open(output_file_name, 'w', encoding='utf-8') as output_file:
@@ -52,17 +52,17 @@ while True:
                     if href:
                         output_file.write(href + '\n')
                         print(Fore.CYAN + href)
-                        time.sleep(0.1)  # Aggiungi un ritardo per l'effetto macchina da scrivere
+                        time.sleep(0.1)  # Add a delay for typewriter effect
 
-            print(Fore.LIGHTYELLOW_EX + f"Risultati salvati nel file: {output_file_name}")
+            print(Fore.LIGHTYELLOW_EX + f"Results saved to file: {output_file_name}")
         elif save_results == 'no':
             for link in links:
                 href = link.get('href')
                 if href:
                     print(Fore.CYAN + href)
-                    time.sleep(0.1)  # Aggiungi un ritardo per l'effetto macchina da scrivere
+                    time.sleep(0.1)  # Add a delay for typewriter effect
         else:
-            print(Fore.RED + "Risposta non valida. I risultati non saranno salvati.")
+            print(Fore.RED + "Invalid response. Results will not be saved.")
 
     except requests.exceptions.RequestException as e:
-        print(Fore.RED + f"Errore nella richiesta per il dominio {domain}: {e}. Il dominio potrebbe non esistere.")
+        print(Fore.RED + f"Error requesting domain {domain}: {e}. The domain may not exist.")
