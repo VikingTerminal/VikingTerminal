@@ -1,24 +1,20 @@
 ## Hi there 👋
 
-🍷 Benvenuti nel mio profilo. Attraverso i miei strumenti potrei eseguire test di sicurezza e altre utilità divertenti.
+🍷 Welcome to my profile. With my tools, I can perform security tests and other fun utilities.
 
-![Sicurezza](https://www.gifcen.com/wp-content/uploads/2023/06/hacker-gif-8.gif)
+![Security](https://www.gifcen.com/wp-content/uploads/2023/06/hacker-gif-8.gif)
 
-Mi auguro che tu abbia l'autorizzazione per utilizzarli oppure stai testando la tua piattaforma.
+I hope you have permission to use them or are testing your own platform.
 
 <!--
 **VikingTerminal/VikingTerminal** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+- 🔭 I’m currently working on UK
+- 🤔 I’m looking for help with other
+- 💬 Ask me about python
+- 📫 How to reach me: t.me/rapid85
 --> 
 
 - 🔭 I’m currently working on awesome projects
@@ -26,6 +22,4 @@ Here are some ideas to get you started:
 - 👯 I’m looking to collaborate on open source projects
 - 🤔 I’m looking for help with advanced algorithms
 - 💬 Ask me about web development
-- 📫 How to reach me: [your email or contact info]
-- 😄 Pronouns: he/him
-- ⚡ Fun fact: I love hiking and photography
+- 📫 How to reach me: [vikingterminal@proton.me]
