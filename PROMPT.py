@@ -1,6 +1,7 @@
 import requests
 from colorama import Fore, Style
 import subprocess
+import os
 
 # Print the banner
 print(Fore.GREEN + """
@@ -69,9 +70,10 @@ tool_mapping = {
     "scandrir.py": "Scandrir"
 }
 
-# Print the list of files
+# Print the list of files without extension
 for i, file in enumerate(files, start=1):
-    print(f"{Fore.CYAN}{i}. {file}{Style.RESET_ALL}")
+    file_name = os.path.splitext(file)[0]  # Remove the extension
+    print(f"{Fore.CYAN}{i}. {file_name}{Style.RESET_ALL}")
 
 # Prompt the user for selection
 try:
