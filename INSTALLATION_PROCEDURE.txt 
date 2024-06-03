@@ -1,0 +1,13 @@
+💻 pip install requests termcolor openai beautifulsoup4 colorama typing scapy dnspython smtplib faker ftplib tqdm whois phonenumbers psycopg2-binary googlesearch-python googletrans==4.0.0-rc1
+
+💻 git clone https://github.com/VikingTerminal/VikingTerminal
+
+💻 cd VikingTerminal
+
+💻 chmod +x *.py
+
+💻 python PROMPT.py
+
+#🌐 Do it all with just one command
+
+💻 pip install requests termcolor openai beautifulsoup4 colorama typing scapy dnspython smtplib faker ftplib tqdm whois phonenumbers psycopg2-binary googlesearch-python googletrans==4.0.0-rc1 && git clone https://github.com/VikingTerminal/VikingTerminal && cd VikingTerminal && chmod +x *.py && python PROMPT.py
