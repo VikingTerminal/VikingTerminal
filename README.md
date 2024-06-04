@@ -25,5 +25,3 @@ Here are some ideas to get you started:
 - 🤞 I’m looking for help with advanced algorithms
 - 🗣️ Ask me about web development
 - 👤 How to reach me: [vikingterminal@proton.me]
-
-![Security](https://s5.ezgif.com/tmp/ezgif-5-cd851b5442.gif)
