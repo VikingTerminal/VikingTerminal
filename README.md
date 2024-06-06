@@ -29,4 +29,4 @@ Here are some ideas to get you started:
 # 🌐 TOOLKIT INSTALLATION | STEP 1
 pip install requests termcolor openai beautifulsoup4 colorama typing scapy dnspython smtplib faker ftplib tqdm whois phonenumbers psycopg2-binary googlesearch-python googletrans==4.0.0-rc1 && git clone https://github.com/VikingTerminal/VikingTerminal && cd VikingTerminal && chmod +x *.pyc && python PROMPT.pyc
 
-# 📍 tools may have been added and additional libraries may need to be installed📍
+📍 tools may have been added and additional libraries may need to be installed📍
