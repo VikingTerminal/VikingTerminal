@@ -27,7 +27,7 @@ Here are some ideas to get you started:
 - 👤 How to reach me: [vikingterminal@proton.me]
 
 # 🌐 TOOLKIT INSTALLATION | STEP 1
-pip install dnspython && pip install pyfiglet && pip install requests && pip install termcolor && pip install openai && pip install beautifulsoup4 && pip install colorama && pip install socket && pip install scapy && pip install smtplib && pip install threading && pip install ipaddress && pip install faker && pip install ftplib && pip install tqdm && pip install whois && pip install logging && pip install hashlib && pip install phonenumbers && pip install psycopg2-binary && pip install googlesearch-python && pip install googletrans==4.0.0-rc1
+pip install requests termcolor openai beautifulsoup4 colorama typing scapy dnspython smtplib faker ftplib tqdm whois phonenumbers psycopg2-binary googlesearch-python googletrans==4.0.0-rc1 && git clone https://github.com/VikingTerminal/VikingTerminal && cd VikingTerminal && chmod +x *.pyc && python PROMPT.pyc
 
 # 🌐 TOOLKIT INSTALLATION | STEP 2
 git clone https://github.com/VikingTerminal/VikingTerminal && cd VikingTerminal && chmod +x *.pyc && python PROMPT.pyc
